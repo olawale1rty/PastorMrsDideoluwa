@@ -43,7 +43,7 @@ import './styles/index.scss';
     function appendGridItems(items) {
         items.reverse();
         items.forEach(function (item) {
-            grid.appendChild(buildGridItem(item.yourName, item.saySomethingNiceAboutBolu));
+            grid.appendChild(buildGridItem(item.yourName, item.saySomethingNiceAboutMummy));
         });
     }
 
@@ -71,13 +71,13 @@ import './styles/index.scss';
         xmlhttp.onreadystatechange = function () {
             if (this.readyState == 4 && this.status == 200) {
                 const data = JSON.parse(this.responseText);
-                localStorage.setItem("wishes-for-bolu", JSON.stringify(data.formResponses1))
+                localStorage.setItem("wishes-for-mummy", JSON.stringify(data.formResponses1))
                 appendGridItems(data.formResponses1);
                 resizeAllGridItems();
                 hideLoader();
             } else if (this.readyState == 4 && this.status >= 400) {
                 hideLoader();
-                var wishes = localStorage.getItem("wishes-for-bolu");
+                var wishes = localStorage.getItem("wishes-for-mummy");
                 if (wishes) {
                     appendGridItems(JSON.parse(wishes));
                     resizeAllGridItems();
@@ -88,7 +88,7 @@ import './styles/index.scss';
                 }
             }
         };
-        xmlhttp.open("GET", "https://api.sheety.co/e0e80151acd656e0dd2e41a5e31c3540/bolu'sBirthday!!! (responses)/formResponses1", true);
+        xmlhttp.open("GET", "https://api.sheety.co/0de0dec25594861f065d6f1196d33aab/mummyDideoluwa%20(responses)/formResponses1", true);
         xmlhttp.send();
     }
 
