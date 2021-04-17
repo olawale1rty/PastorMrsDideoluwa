@@ -43,7 +43,7 @@ import './styles/index.scss';
     function appendGridItems(items) {
         items.reverse();
         items.forEach(function (item) {
-            grid.appendChild(buildGridItem(item.yourName, item.saySomethingNiceAboutMummy));
+            grid.appendChild(buildGridItem(item.yourName, item.saySomethingNiceAboutBro.Ayanfe));
         });
     }
 
@@ -88,7 +88,7 @@ import './styles/index.scss';
                 }
             }
         };
-        xmlhttp.open("GET", "https://api.sheety.co/0de0dec25594861f065d6f1196d33aab/mummyDideoluwa%20(responses)/formResponses1", true);
+        xmlhttp.open("GET", "https://api.sheety.co/0de0dec25594861f065d6f1196d33aab/birthdayWishes (responses)/formResponses1", true);
         xmlhttp.send();
     }
 
