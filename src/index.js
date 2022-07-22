@@ -43,7 +43,7 @@ import './styles/index.scss';
     function appendGridItems(items) {
         items.reverse();
         items.forEach(function (item) {
-            grid.appendChild(buildGridItem(item.yourName, item.saySomethingNiceAboutSegun));
+            grid.appendChild(buildGridItem(item.yourName, item.saySomethingNiceAboutIfe));
         });
     }
 
